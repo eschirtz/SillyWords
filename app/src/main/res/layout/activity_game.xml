@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:orientation="vertical"
+    tools:context="com.eschirtz.madlibapp.Game">
+
+    <TextView
+        android:id="@+id/word_enter_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Put in your words!"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTextLight"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:src="@drawable/arrow" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="24dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/user_input_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter a Noun"
+            android:imeActionId="@+id/next_button_edit_text"
+            android:imeActionLabel="@string/app_name"
+            android:textColor="@color/colorTextLight"
+            android:textColorHint="@color/colorTextClear" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getUserWord"
+            android:text="Next"
+            android:theme="@style/BigButton" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/game_button"
+        style="@style/BigButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showStory"
+        android:text="View Story"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/temp_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:maxLines="20"
+        android:scrollbars="vertical"
+        android:text=""
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTextLight"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:elevation="4dp"/>
+
+</LinearLayout>

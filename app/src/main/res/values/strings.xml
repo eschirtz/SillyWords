@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Silly Words</string>
+    <string name="start_button">Start</string>
+
+    <!-- Messages to be displayed to user as they input words -->
+    <string name="input_word_message_new">Put in your words!</string>
+    <string name="input_word_message_final">Last Word!</string>
+    <string name="input_words_left"> words left!</string>
+    <string name="input_only">Only </string>
+    <string name="input_words_to_go"> words to go!</string>
+
+</resources>

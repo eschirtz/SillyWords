@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Palabras Tontas</string>
+    <string name="input_only">Solamente</string>
+    <string name="input_word_message_final">Ultima pulabra!</string>
+    <string name="input_word_message_new">Pon tu palabras!</string>
+    <string name="input_words_left">" palabras para ir!"</string>
+    <string name="input_words_to_go">\" palabras para ir!</string>
+    <string name="start_button">Comienzo</string>
+</resources>
